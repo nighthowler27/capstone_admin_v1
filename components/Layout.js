@@ -8,9 +8,9 @@ export default function Layout({children}) {
   const { data: session } = useSession();
   if (!session) {
     return (
-      <div className="bg-bgGray w-screen h-screen flex items-center">
+      <div className="bg-gradient-to-r from-indigo-600 to-amber-500 w-screen h-screen flex items-center">
         <div className="text-center w-full">
-          <button onClick={() => signIn('google')} className="bg-white p-2 px-4 rounded-lg">Login with Google</button>
+          <button onClick={() => signIn('google')} className="bg-blue-500 text-white p-4 px-8 rounded-lg animate-bounce">Login with Google</button>
         </div>
       </div>
     );
