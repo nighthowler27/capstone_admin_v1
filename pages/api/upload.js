@@ -5,7 +5,7 @@ import mime from 'mime-types';
 import {mongooseConnect} from "@/lib/mongoose";
 import {isAdminRequest} from "@/pages/api/auth/[...nextauth]";
 
-const bucketName = 'capstone-next-ecommerce';
+const bucketName = 'capstone-images-devengers';
 
 export default async function handle(req,res) {
   await mongooseConnect();
@@ -20,7 +20,7 @@ export default async function handle(req,res) {
   });
   console.log('length:', files.file.length);
   const client = new S3Client({
-    region: 'eu-north-1',
+    region: 'ap-northeast-1',
     credentials: {
       accessKeyId: process.env.S3_ACCESS_KEY,
       secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
