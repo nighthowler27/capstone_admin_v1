@@ -27,12 +27,18 @@ export default function Layout({children}) {
 
   if (!session) {
     return (
+<<<<<<< HEAD
       <LayoutLoginReg>
       <section className="w-4/5 mt-2 mx-10 my-auto flex flex-col gap-2">
 
         <div className="title">
           <h1 className="text-green-800 text-3xl font-bold py-4">Explore</h1>
           <p className="w-3/4 mx-auto text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, veniam..</p>
+=======
+      <div className="bg-gradient-to-r from-indigo-600 to-amber-500 w-screen h-screen flex items-center">
+        <div className="text-center w-full">
+          <button onClick={() => signIn('google')} className="bg-blue-500 text-white p-4 px-8 rounded-lg animate-bounce">Login with Google</button>
+>>>>>>> d3759ce5076eba9d5524e7ba0f5aa74c7347cd27
         </div>
 
         {/* Form */}
